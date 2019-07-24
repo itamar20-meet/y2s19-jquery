@@ -1,8 +1,8 @@
 // Write all your JavaScript and JQuery code in this file! :)
 /* START PROVIDED CODE */
-function randomX() {
+function randomX {
   return Math.random() * $(window).width();
-}
+
 
 function randomY() {
   return Math.random() * $(window).height();
@@ -10,3 +10,8 @@ function randomY() {
 /* END PROVIDED CODE */
 
 // Write your code below this line :)
+$("#moveButton").on("click",randomX(), randomY()){
+	$("#message").css("left",randomX)
+	$("#message").css("top", randomY)
+	$("#message").css("position", relative)
+}
